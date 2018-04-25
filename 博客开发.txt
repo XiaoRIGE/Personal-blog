@@ -1,0 +1,20 @@
+1.数据库编写
+	创建数据表article:
+	create table article(
+		id int primary key auto_increment,
+		title varchar(20),
+		describes varchar(50),
+		content text,
+		author varchar(20),
+		createtime timestamp default current_timestamp
+);
+
+2.绑定事件
+	获取表单数据，发送AJAX请求
+
+The great events of the creation of the century
+This is my first blog. My blog life is about to start.
+A happy blog
+3.列表页面制作（前台，后台）；
+	前台首页
+	后台登录页+添加文章啊

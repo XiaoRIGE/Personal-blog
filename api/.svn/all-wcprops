@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/personBlog/!svn/ver/13/trunk/api
+END
+conn.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/personBlog/!svn/ver/4/trunk/api/conn.php
+END
+article_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/personBlog/!svn/ver/4/trunk/api/article_list.php
+END
+article_one.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/personBlog/!svn/ver/13/trunk/api/article_one.php
+END

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>后台管理系统</title>
+		<link href="../images/index.css" type="text/css" rel="stylesheet"/>
+		<script src="../images/jquery.js"></script>
+	</head>
+	<body>
+		<div class="note">
+			<h4>发表新闻</h4>
+			<form action="" method="post">
+				<table class="news_form">
+					<tr>
+						<td>新闻标题：</td>
+						<td><input type="text" name="title" class="inbox"/></td>
+					</tr>
+					<tr>
+						<td>新闻分类：</td>
+						<td>
+							<select class="inbox">
+								<option>请选择分类</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>作　　者：</td>
+						<td><input type="text" name="title" class="inbox"/></td>
+					</tr>
+					<tr>
+						<td>新闻内容：</td>
+						<td>
+							<textarea name="content" id="content" style="display:none;"></textarea>
+							<iframe id="FCK_Frame" src="../editor/editor/fckeditor.html?InstanceName=content&amp;Toolbar=Default" width="100%" height="350" frameborder="no" scrolling="no"></iframe>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="提交"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
