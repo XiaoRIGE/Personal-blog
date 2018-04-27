@@ -5,7 +5,7 @@
 	//获取前端传过来的值
 	$id=$_GET["id"];
 
-	$sql="select * from article where id='$id'";
+	$sql="select * from article2 where id='$id'";
 		
 	$rs=mysqli_query($conn, $sql);
 

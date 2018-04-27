@@ -18,6 +18,14 @@
 		<style type="text/css">
 			/*设置页面文字被选中样式*/
 			::selection { background:#d3d3d3; color:deepskyblue;}
+			/* 设置超出页面显示省略号 */
+			/* .is-post {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
+			} */
 		</style>
 	</head>
 	<body class="left-sidebar">
@@ -244,12 +252,14 @@
 					var month=String(date).substr(4,3);
 					var day=String(date).substr(8,2);
 					var year=String(date).substr(11,4);
+
+					// console.log(DateStr);
 					//待修改 超链接部分
-					article+='<article class="is-post is-post-excerpt"><header><h2 id="articleTitle" onclick="jump('+v.id+')">'+v.title+'</h2><span class="byline">'+v.describes+'</span></header><div class="info"><span class="date"><span class="month">'+month+'</span> <span class="day">'+day+'</span><span class="year">, '+year+'</span></span><ul class="stats"><li><a href="#" class="link-icon24 link-icon24-1">16</a></li><li><a href="#" class="link-icon24 link-icon24-2">32</a></li><li><a href="#" class="link-icon24 link-icon24-3">64</a></li><li><a href="#" class="link-icon24 link-icon24-4">128</a></li></ul></div><a href="#" class="image image-full"><img src="images/02.jpg" alt="" /></a><p><strong>'+v.content+'</p></article>';
+					article+='<article class="is-post is-post-excerpt"><header><h2 id="articleTitle" onclick="jump('+v.id+')">'+v.title+'</h2><span class="byline">'+v.describes+'</span></header><div class="info"><span class="date"><span class="month">'+month+'</span> <span class="day">'+day+'</span><span class="year">, '+year+'</span></span><ul class="stats"><li><a href="#" class="link-icon24 link-icon24-1">16</a></li><li><a href="#" class="link-icon24 link-icon24-2">32</a></li><li><a href="#" class="link-icon24 link-icon24-3">64</a></li><li><a href="#" class="link-icon24 link-icon24-4">128</a></li></ul></div>'+v.content+'</article>';
 				});
 				
 				
-				$(".pager").before(article);
+				$(".pager").html(article);
 			}
 		}
 		ajax.send();

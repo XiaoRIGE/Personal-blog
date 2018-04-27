@@ -4,7 +4,7 @@
 	//获取前端传过来的值
 	
 	
-	$sql="select * from article order by createtime DESC";
+	$sql="select * from article2 order by createtime DESC";
 		
 	$rs=mysqli_query($conn, $sql);
 	
