@@ -20,7 +20,7 @@
 			}
 			body {
 				background: #000000;
-				background: url(img/2.jpg) no-repeat;
+				background: url("./images/bg1.jpg") no-repeat;
 			}
 			#app {
 				
@@ -30,7 +30,7 @@
 				padding-top: 100px;
 			}
 			#myform{
-				background: white;
+				background: rgba(0,0,0,0.3);
 				text-align: center;
 				border-radius: 10px;
 			}
@@ -76,7 +76,7 @@
 						//取用户输入的用户名和密码
 						var username=this.username;
 						var password=this.password;
-						console.log(username,password);
+						// console.log(username,password);
 						//构造 AJAX请求，并且将用户名和密码数据发送到服务器端
 						var ajax=new XMLHttpRequest();
 						//使用get方法将参数传递到后台
@@ -85,10 +85,10 @@
 						ajax.onreadystatechange=function(){
 							if(ajax.readyState==4 && ajax.status==200) {
 								var data=ajax.responseText;
-								console.log(data)
+								// console.log(data);
 								if(data=="1"){
 									alert("登录成功！");
-									location.href="home.html";
+									location.href="index.html";
 								}
 								else{
 									alert("用户名或密码失败，请重新输入");

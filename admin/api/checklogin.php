@@ -20,7 +20,10 @@
 	//var_dump($rs);
 //	6) 将查询的结果返回给客户端
 	if(mysqli_num_rows($rs)>0){
-		
+		$row=mysqli_fetch_assoc($rs);
+		//创建session
+		$_SESSION['username']=$username;
+		$_SESSION['password']=$password;
 		echo '1';
 	}
 	else {
